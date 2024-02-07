@@ -1,6 +1,6 @@
 /* Remove margins */
 body {
-  overflow: hidden;
+  overflow: scroll;
   margin: 0;
   background-color: #1f1f1f;
   font-family: 'Roboto';
@@ -122,9 +122,10 @@ footer a i {
   font-size: x-large;
 }
 
-@media (min-width: 680px) {
+@media screen and (min-width: 1000px) {
   body {
     background-color: #e7f6ff;
+    overflow: hidden;
   }
 
   @keyframes float {
