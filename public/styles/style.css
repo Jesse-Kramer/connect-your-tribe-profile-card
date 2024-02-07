@@ -39,8 +39,12 @@ header {
 
 header img {
   margin: var(--primary-space);
-  border-radius: 100%;
+  object-fit: cover;
+  border-radius: 50%;
   max-width: 320px;
+  min-width: 320px;
+  max-height: 320px;
+  min-height: 320px;
 }
 
 header h1,
