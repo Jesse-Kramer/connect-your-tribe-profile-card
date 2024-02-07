@@ -1,45 +1,47 @@
 <%- include('./partials/head') %>
+  <section class="card-container">
 
-  <header>
-    <img src="<%= data.avatar %>" alt="Avatar">
-    <h1>
-      <%= data.name %>
-        <%= data.surname %>
-    </h1>
-    <h2>Front-end Design & Developer</h2>
-    <section class="tags">
-      <span class="student">Student</span>
-      <span class="developer">Developer</span>
-    </section>
-  </header>
-  <hr>
-  <main>
-    <ul>
-      <li>
-        <a href="<%= data.website %>" target="_blank">
-          <i class="fa-solid fa-house"></i>
-          <%= data.website %>
-        </a>
-      </li>
-      <li>
-        <a href="mailto:<%= data.email %>" target="_blank">
-          <i class="fa-solid fa-envelope"></i>
-          <%= data.email %>
-        </a>
-      </li>
-      <li>
-        <a href="tel:<%= data.phone_number %>" target="_blank">
-          <i class="fa-solid fa-phone"></i>
-          <%= data.phone_number %>
-        </a>
-      </li>
-    </ul>
-  </main>
-  <hr>
-  <footer>
-    <a href="https://www.instagram.com/jessekr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-    <a href="https://www.linkedin.com/in/jesse-kramer-10058822a/" target="_blank"><i
-        class="fa-brands fa-linkedin-in"></i></a>
-  </footer>
+    <header>
+      <img src="<%= data.avatar %>" alt="Avatar">
+      <h1>
+        <%= data.name %>
+          <%= data.surname %>
+      </h1>
+      <h2>Front-end Design & Developer</h2>
+      <section class="tags">
+        <span class="student">Student</span>
+        <span class="developer">Developer</span>
+      </section>
+    </header>
+    <hr>
+    <main>
+      <ul>
+        <li>
+          <a href="<%= data.website %>" target="_blank">
+            <i class="fa-solid fa-house"></i>
+            <%= data.website %>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:<%= data.email %>" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+            <%= data.email %>
+          </a>
+        </li>
+        <li>
+          <a href="tel:<%= data.phone_number %>" target="_blank">
+            <i class="fa-solid fa-phone"></i>
+            <%= data.phone_number %>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <hr>
+    <footer>
+      <a href="https://www.instagram.com/jessekr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/jesse-kramer-10058822a/" target="_blank"><i
+          class="fa-brands fa-linkedin-in"></i></a>
+    </footer>
+  </section>
 
   <%- include('./partials/foot') %>

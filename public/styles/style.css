@@ -122,4 +122,44 @@ footer a i {
   font-size: x-large;
 }
 
-@media (min-width: 600px) {}
+@media (min-width: 680px) {
+  body {
+    background-color: #e7f6ff;
+  }
+
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translate(-50%, -50%);
+    }
+
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+      transform: translate(-50%, -47.5%);
+    }
+
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .card-container {
+    padding: var(--secondary-space);
+    width: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    background-color: #1f1f1f;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
+
+    animation: float 3.5s ease-in-out infinite;
+
+    box-shadow: 0 5px 20px 5px #00000044;
+  }
+}
