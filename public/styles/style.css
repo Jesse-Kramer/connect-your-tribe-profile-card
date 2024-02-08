@@ -99,6 +99,7 @@ main ul li {
   border-radius: 8px;
   border: 2px #1a1a1c solid;
   margin: 1rem 0 1rem 0;
+  cursor: pointer;
 }
 
 main ul li i {
@@ -116,12 +117,14 @@ footer {
 
 footer a {
   margin: var(--primary-space);
+  cursor: pointer;
 }
 
 footer a i {
   font-size: x-large;
 }
 
+/* Responsive (Desktop) */
 @media screen and (min-width: 1000px) {
   body {
     background-color: #e7f6ff;
